@@ -59,21 +59,24 @@ App runs at `http://localhost:5173`.
 
 ## Screenshots
 
-| Landing Page | User Login |
-|---|---|
-| ![Landing Page](landing-page.png) | ![User Login](user-login.png) |
-
-| Store Manager Login | Store Manager Dashboard |
-|---|---|
-| ![Store Manager Login](store-manager-login.png) | ![Store Manager Dashboard](store-manager-dashboard.png) |
-
-| Admin Dashboard | Users Management |
-|---|---|
-| ![Admin Dashboard](admin-dashboard.png) | ![Users Management](users-management.png) |
-
-| Stores Listing | Change Password |
-|---|---|
-| ![Stores Listing](stores-listing.png) | ![Change Password](change-password.png) |
+<table>
+<tr>
+<td><b>Landing Page</b><br><img src="landing-page.png" width="350"></td>
+<td><b>User Login</b><br><img src="user-login.png" width="350"></td>
+</tr>
+<tr>
+<td><b>Store Manager Login</b><br><img src="store-manager-login.png" width="350"></td>
+<td><b>Store Manager Dashboard</b><br><img src="store-manager-dashboard.png" width="350"></td>
+</tr>
+<tr>
+<td><b>Admin Dashboard</b><br><img src="admin-dashboard.png" width="350"></td>
+<td><b>Users Management</b><br><img src="users-management.png" width="350"></td>
+</tr>
+<tr>
+<td><b>Stores Listing</b><br><img src="stores-listing.png" width="350"></td>
+<td><b>Change Password</b><br><img src="change-password.png" width="350"></td>
+</tr>
+</table>
 
 ## Author
 
