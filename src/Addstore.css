@@ -1,0 +1,275 @@
+/* ================================
+   ADD STORE PAGE
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+.add-store-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f7fb;
+
+  padding: 30px;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.add-store-container {
+  width: 100%;
+  max-width: 440px;
+
+  background: #ffffff;
+
+  padding: 32px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.add-store-container h2 {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 26px;
+
+  color: #222;
+}
+
+.subtitle {
+  text-align: center;
+
+  margin: 8px 0 25px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.form-group {
+  margin-bottom: 17px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #333;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  border: 1px solid #d7dce5;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+
+  background: #fff;
+}
+
+.form-group input {
+  height: 43px;
+
+  padding: 0 12px;
+}
+
+.form-group textarea {
+  min-height: 80px;
+
+  padding: 11px 12px;
+
+  resize: vertical;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* Focus */
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4f46e5;
+
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.08);
+}
+
+
+/* Disabled */
+
+.form-group input:disabled,
+.form-group textarea:disabled {
+  background: #f5f5f5;
+
+  cursor: not-allowed;
+}
+
+
+/* ================================
+   ADD STORE BUTTON
+================================ */
+
+.add-store-button {
+  width: 100%;
+
+  height: 43px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.add-store-button:hover {
+  background: #4338ca;
+}
+
+.add-store-button:disabled {
+  background: #999;
+
+  cursor: not-allowed;
+}
+
+
+/* ================================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message {
+  margin-top: 18px;
+
+  padding: 10px 12px;
+
+  border-radius: 6px;
+
+  background: #ecfdf3;
+
+  border: 1px solid #b7ebc6;
+
+  color: #18864b;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+
+/* ================================
+   ERROR MESSAGE
+================================ */
+
+.error-message {
+  margin-top: 18px;
+
+  padding: 10px 12px;
+
+  border-radius: 6px;
+
+  background: #fff0f0;
+
+  border: 1px solid #ffd0d0;
+
+  color: #d93025;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+
+/* ================================
+   BACK TO ADMIN
+================================ */
+
+.back-button {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 18px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #555;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #4f46e5;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .add-store-page {
+    padding: 20px;
+  }
+
+  .add-store-container {
+    padding: 25px 20px;
+  }
+
+  .add-store-container h2 {
+    font-size: 23px;
+  }
+
+}

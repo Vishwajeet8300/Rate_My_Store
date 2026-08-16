@@ -1,0 +1,362 @@
+/* =====================================================
+   STORE MANAGER LOGIN PAGE
+   ===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.manager-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+
+  background:
+    radial-gradient(circle at top left, #eef2ff 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #fff7df 0%, transparent 35%),
+    #f7f8fc;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================================
+   LOGIN CARD
+   ===================================================== */
+
+.manager-login-card {
+  width: 100%;
+  max-width: 410px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  padding: 34px 34px 30px;
+
+  border: 1px solid #e8eaf0;
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 45px rgba(25, 35, 70, 0.10),
+    0 4px 12px rgba(25, 35, 70, 0.05);
+
+  animation: managerCardAppear 0.45s ease;
+}
+
+
+/* Card Animation */
+
+@keyframes managerCardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.manager-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 28px;
+
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+
+  color: #1f2937;
+}
+
+.manager-logo span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 8px;
+
+  border-radius: 9px;
+
+  background: #fff4c7;
+  color: #f4b400;
+
+  font-size: 17px;
+}
+
+
+/* =====================================================
+   HEADING
+   ===================================================== */
+
+.manager-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.manager-heading h1 {
+  margin: 0 0 8px;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #1f2937;
+}
+
+.manager-heading p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #737b8c;
+}
+
+
+/* =====================================================
+   ERROR MESSAGE
+   ===================================================== */
+
+.manager-error {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 18px;
+  padding: 10px 12px;
+
+  border: 1px solid #ffd4d4;
+  border-radius: 8px;
+
+  background: #fff6f6;
+  color: #d93025;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+/* =====================================================
+   FORM
+   ===================================================== */
+
+.manager-form-group {
+  margin-bottom: 18px;
+}
+
+.manager-form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUT
+   ===================================================== */
+
+.manager-form-group input {
+  width: 100%;
+  height: 45px;
+
+  padding: 0 13px;
+
+  border: 1px solid #d9dde7;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #1f2937;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.manager-form-group input::placeholder {
+  color: #a0a6b2;
+}
+
+.manager-form-group input:hover {
+  border-color: #b8beca;
+}
+
+.manager-form-group input:focus {
+  border-color: #4f46e5;
+
+  box-shadow:
+    0 0 0 3px rgba(79, 70, 229, 0.10);
+}
+
+.manager-form-group input:disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+   ===================================================== */
+
+.manager-login-submit {
+  width: 100%;
+  height: 44px;
+
+  margin-top: 4px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 12px rgba(79, 70, 229, 0.20);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.manager-login-submit:hover {
+  background: #4338ca;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 16px rgba(79, 70, 229, 0.25);
+}
+
+.manager-login-submit:active {
+  transform: translateY(0);
+}
+
+.manager-login-submit:disabled {
+  background: #a5a5a5;
+
+  box-shadow: none;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+   ===================================================== */
+
+.manager-back-button {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 16px;
+
+  padding: 5px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.manager-back-button:hover {
+  color: #4f46e5;
+}
+
+
+/* =====================================================
+   SMALL FOOTER TEXT
+   ===================================================== */
+
+.manager-login-card::after {
+  content: "Secure Store Manager Access";
+
+  display: block;
+
+  margin-top: 22px;
+
+  text-align: center;
+
+  color: #a0a6b2;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+  .manager-login-page {
+    padding: 20px 15px;
+  }
+
+  .manager-login-card {
+    max-width: 100%;
+
+    padding: 28px 22px 25px;
+
+    border-radius: 14px;
+  }
+
+  .manager-logo {
+    font-size: 21px;
+
+    margin-bottom: 24px;
+  }
+
+  .manager-heading h1 {
+    font-size: 23px;
+  }
+
+  .manager-heading p {
+    font-size: 13px;
+  }
+
+  .manager-form-group input {
+    height: 43px;
+  }
+
+  .manager-login-submit {
+    height: 43px;
+  }
+}

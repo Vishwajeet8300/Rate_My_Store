@@ -1,0 +1,76 @@
+/* Main page */
+.registration-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f4f7;
+}
+
+/* Registration box */
+.registration-box {
+  width: 400px;
+  padding: 35px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.registration-box h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+/* Input when clicked */
+.form-group input:focus {
+  border-color: #4a90e2;
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+  color: #999;
+}
+
+/* Register button */
+.registration-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Button hover */
+.registration-box button:hover {
+  background-color: #357abd;
+}
