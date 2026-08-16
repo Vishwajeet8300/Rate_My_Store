@@ -9,7 +9,7 @@ const db = require("./db");
 const app = express();
 
 const PORT = process.env.PORT || 5000;
-const HOST = "127.0.0.1";
+const HOST = "0.0.0.0";
 
 // =====================================================
 // MIDDLEWARE
