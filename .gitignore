@@ -35,3 +35,5 @@ backend/.env.*
 
 # OS
 Thumbs.db
+.env
+backend/.env
